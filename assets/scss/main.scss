@@ -1,0 +1,28 @@
+@import "node_modules/normalize.css/normalize";
+@import "partials/header";
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+picture {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 50vw;
+  }
+}

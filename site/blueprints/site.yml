@@ -1,0 +1,32 @@
+title: Site
+
+tabs:
+  # Tabs 1 - All pages of the site
+  pages_tab:
+    label: Pages
+    icon: page
+
+    sections:
+      pages:
+        type: pages
+        label: Online pages
+        
+
+  # Tabs 2 - Maintenance toggle field
+  maintenance_tab:
+    label: Maintenance
+    icon: cog
+
+    sections:
+      maintenance:  
+        type: fields
+        fields:
+          maintenance:
+            label: Maintenance
+            type: toggle
+            text:
+              - "no"
+              - "yes"
+
+  # Tabs 3 - Contact blueprint from plugin
+  contact: tabs/seo/contact

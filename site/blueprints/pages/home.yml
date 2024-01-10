@@ -1,0 +1,9 @@
+title: Home page
+
+tabs:
+  content:
+    sections:
+      files:
+        type: files
+
+  meta: tabs/seo/meta

@@ -1,0 +1,76 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+# Lock files
+# ---------------
+
+.lock
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+*.sublime-workspace
+/.vscode
+/.idea
+
+# Rollup's generated folder
+# ----------------------
+
+/assets/bundle
+
+# Node modules
+# ----------------------
+
+node_modules
+
+# Miscellaneous
+# ----------------------
+
+*.zip
+*.rar
+*.psd
+*.indd
+*.ai
+
+# Kirby core directory
+# ----------------------
+
+/kirby
+/vendor
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+/.parcel-cache/
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+
+/site/config/.license

@@ -1,0 +1,9 @@
+title: files
+
+sections:
+  data:
+    type: fields
+    fields:
+      alt:
+        label: Short description for image "alt" tag
+        type: text

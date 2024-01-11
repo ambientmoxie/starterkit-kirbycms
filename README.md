@@ -1,8 +1,14 @@
-## How to first run the starterkit
+# Getting Started with the Starter Kit
 
-- Clone the repo.
-- "composer install" to install the correct version of Kirby + vendor folder.
-- "npm install" to install the node_modules folder.
-- "npm run dev" for development.
-- "npm run build" for production.
+Follow these steps to set up the project:
 
+1. **Clone the Repository**:  
+   Use `git clone [repository-url]` to clone the repo to your local machine.
+
+2. **Install Dependencies**:  
+   - Run `composer install` to install the correct version of Kirby along with the necessary vendor folders.
+   - Execute `npm install` to install the node_modules folder.
+
+3. **Development and Production**:
+   - For development purposes, use `npm run dev`.
+   - For production builds, run `npm run build`.

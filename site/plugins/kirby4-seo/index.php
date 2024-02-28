@@ -2,7 +2,7 @@
 
 @include_once __DIR__ . '/vendor/autoload.php';
 
-Kirby::plugin('hashsandsalt/kirby3-seo', [
+Kirby::plugin('hashsandsalt/kirby4-seo', [
 
     'snippets' => [
       'seo/meta'    => __DIR__ . '/snippets/meta.php',
@@ -26,7 +26,7 @@ Kirby::plugin('hashsandsalt/kirby3-seo', [
               'metakeywords'      => $page->seotags(),
               'metarobots'        => 'index, follow, noodp',
               'metaurl'           => $page->url(),
-              'metaimage'         => $page->shareimage()->toFile() ? $page->shareimage()->toFile()->crop(1280, 720)->url() : ' ',
+              'metaimage'         => $page->shareimage()->toFile() ? $page->shareimage()->toFile()->crop(1280, 720)->url() : '',
 
               // Facebook Meta
               'metafbtype'         => 'website',
@@ -35,11 +35,8 @@ Kirby::plugin('hashsandsalt/kirby3-seo', [
 
               // Twitter Meta
               'metatwcard'         => 'summary_large_image',
-              'metatwsite'         => $site->socialtwitterurl()->isNotEmpty() ? $site->socialtwitterurl() : ' ',
-              'metatwcreator'      => $site->twittercreator()->isNotEmpty() ? $site->twittercreator() : ' ',
-
-              // Canonical Url
-              'canonicalurl'          => $site->url(),
+              'metatwsite'         => $site->socialtwitterurl()->isNotEmpty() ? $site->socialtwitterurl() : '',
+              'metatwcreator'      => $site->twittercreator()->isNotEmpty() ? $site->twittercreator() : '',
 
             ];
         }

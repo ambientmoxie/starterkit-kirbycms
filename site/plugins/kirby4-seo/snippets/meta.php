@@ -21,4 +21,3 @@
 <?= Html::tag('meta', null, ["name" => "twitter:description", "content" => $metadesc]).PHP_EOL ?>
 
 <?= Html::tag('meta', null, ["name" => "robots", "content" => $metarobots]).PHP_EOL ?>
-<?= Html::tag('link', null, ["rel" => "canonical", "href" => "$canonicalurl"]).PHP_EOL ?>

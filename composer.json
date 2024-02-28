@@ -23,10 +23,10 @@
   },
   "require": {
     "php": ">=8.0.0 <8.3.0",
-    "getkirby/cms": "^3.9",
+    "getkirby/cms": "4.1.1",
     "johannschopplich/kirby-hashed-assets": "^3.0",
     "moritzebeling/kirby-maintenance": "^1.0",
-    "hashandsalt/kirby3-seo": "^1.0",
+    "hashandsalt/kirby4-seo": "^1.0",
     "johannschopplich/kirby-blurry-placeholder": "^3.0"
   },
   "config": {

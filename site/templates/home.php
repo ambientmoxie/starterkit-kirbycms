@@ -17,26 +17,17 @@
     ?>
 
     <picture>
-        <source
-            data-srcset="<?= $image->srcset('avif') ?>"
-            sizes="<?= $sizes ?>"
-            type="image/avif"
-        >
-        <source
-            data-srcset="<?= $image->srcset('webp') ?>"
-            sizes="<?= $sizes ?>"
-            type="image/webp"
-        >
+        <source data-srcset="<?= $image->srcset('avif') ?>" sizes="<?= $sizes ?>" type="image/avif">
+        <source data-srcset="<?= $image->srcset('webp') ?>" sizes="<?= $sizes ?>" type="image/webp">
         <img
-            alt="<?= $image->alt() ?>"
-            src=<?= $placeholder ?>
-            data-src="<?= $image->resize(300)->url() ?>"
+            style="aspect-ratio: <?= $image->ratio() ?>;"
+            src="<?= $image->blurhashUri() ?>"
             data-srcset="<?= $image->srcset() ?>"
             sizes="<?= $sizes ?>"
             width="<?= $image->resize(1800)->width() ?>"
             height="<?= $image->resize(1800)->height() ?>"
+            alt="<?= $image->alt() ?>"
             data-lazyload
-            
         >
     </picture>
 

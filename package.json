@@ -17,12 +17,14 @@
     "@rollup/plugin-terser": "^0.4.3",
     "autoprefixer": "^10.4.15",
     "hashup": "^0.4.4",
-    "loadeer": "^2.1.3",
     "normalize.css": "^8.0.1",
     "postcss": "^8.4.29",
     "rimraf": "^5.0.1",
     "rollup": "^3.28.1",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.68.0"
+  },
+  "dependencies": {
+    "vanilla-lazyload": "^17.8.8"
   }
 }

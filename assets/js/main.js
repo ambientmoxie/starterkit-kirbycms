@@ -1,7 +1,11 @@
 import "../scss/main.scss";
-import Loadeer from "loadeer";
+import LazyLoad from "vanilla-lazyload";
 
-const loadeer = new Loadeer();
-loadeer.observe();
+// Lazy loading
+let lazyLoadInstance;
 
-console.log("alert");
+document.addEventListener("DOMContentLoaded", function () {
+  lazyLoadInstance = new LazyLoad({
+    elements_selector: "[data-lazyload]",
+  });
+});

@@ -27,7 +27,7 @@
     "johannschopplich/kirby-hashed-assets": "^3.0",
     "moritzebeling/kirby-maintenance": "^1.0",
     "hashandsalt/kirby4-seo": "^1.0",
-    "johannschopplich/kirby-blurry-placeholder": "^3.0"
+    "tobimori/kirby-blurhash": "^1.2"
   },
   "config": {
     "allow-plugins": {

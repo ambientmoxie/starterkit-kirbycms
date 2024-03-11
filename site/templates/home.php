@@ -10,10 +10,6 @@
     if ($page->hasFiles()):
         $images = $pages->files();
         foreach ($images as $image):
-            $placeholder = $image->placeholderUri([
-                                'width' => 30,
-                                'ratio' => $image->ratio()
-                            ]);
     ?>
 
     <picture>

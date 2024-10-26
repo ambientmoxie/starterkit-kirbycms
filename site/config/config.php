@@ -8,7 +8,6 @@ return [
         'css' => '/assets/css/maintenance.css',
         'text' => 'This website is currently under maintenance and will be back online soon.',
     ],
-    'languages' => true,
     'thumbs' => [
         'srcsets' => [
             'default' => [

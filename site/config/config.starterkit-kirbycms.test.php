@@ -10,7 +10,6 @@ However, the path to assets like javascript and css files gets lost during proxy
 return [
     'debug' => true,
     'url' => isset($_SERVER['HTTP_X_FORWARDED_HOST']) ? $_SERVER['HTTP_X_FORWARDED_PROTO'] . '://' . $_SERVER['HTTP_X_FORWARDED_HOST'] : 'http://starterkit-kirbycms.test',
-    'languages' => true,
     'thumbs' => [
         'srcsets' => [
             'default' => [

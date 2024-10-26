@@ -30,10 +30,6 @@
     <?php endforeach ?>
 <?php endif ?>
 
-<!-- Switch language -->
-
-<?php snippet('switch_language') ?>
-
 <!-- Footer -->
 
 <?php snippet('footer') ?>

@@ -1,8 +1,12 @@
 <?php
 
+require_once __DIR__ . '/../helpers/vite.php';
+
 return [
     'debug' => false,
-
+    'vite' => [
+        'dev' => true
+    ],
     'moritzebeling.kirby-maintenance' => [
         'ignore' => [],
         'css' => '/assets/css/maintenance.css',

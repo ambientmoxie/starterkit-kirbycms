@@ -9,3 +9,4 @@ document.addEventListener("DOMContentLoaded", function () {
     elements_selector: "[data-lazyload]",
   });
 });
+

@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <?= $page->title() ?> </title>
     <?= snippet('seo/meta') ?>
-    <?= css('assets/bundle/css/bundle.css') ?>
+
+    <?php if (option('vite.dev')): ?>
+        <!-- Include Vite dev server for HMR -->
+        <script type="module" src="http://localhost:3000/@vite/client"></script>
+        <script type="module" src="http://localhost:3000/assets/js/main.js" defer></script>
+    <?php else: ?>
+        <!-- Include the production build files -->
+        <link rel="stylesheet" href="<?= vite_asset('assets/js/main.js', "css") ?>">
+        <script src="<?= vite_asset('assets/js/main.js', "js") ?>" type="module" defer></script>
+    <?php endif; ?>
 
 </head>
 

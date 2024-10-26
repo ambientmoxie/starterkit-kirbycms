@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "description": "A starter kit that leverages the power of Kirby CMS and the rollup bundler. Bundle files are hashed using \"kirby-hashed-assets\" plugin developed by Johann Schopplich.",
   "scripts": {
-    "clean": "rimraf assets/bundle/*",
-    "hash": "hashup assets/bundle",
-    "dev": "npm run clean && rollup -c rollup.config.dev.mjs -w",
-    "build": "npm run clean && rollup -c rollup.config.prod.mjs && npm run hash"
+    "dev": "VITE_DEV=true vite",
+    "build": "VITE_DEV=false vite build"
   },
   "keywords": [],
   "author": "",

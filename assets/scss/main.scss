@@ -3,26 +3,23 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 *,
 *::after,
 *::before {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
-h1 {
-  font-size: 1.5rem;
+body {
+  font-family: monospace;
+  padding: 10px;
 }
 
-picture {
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width: 50vw;
-  }
+ul,
+li {
+  list-style-type: none;
+  color: black;
 }

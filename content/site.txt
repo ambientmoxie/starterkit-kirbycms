@@ -1,4 +1,4 @@
-Title: KirbyCMS / Rollup Bundler Starter
+Title: Kirby CMS x Vite.js
 
 ----
 

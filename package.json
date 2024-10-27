@@ -1,7 +1,7 @@
 {
   "name": "starterkit-kirbycms",
   "version": "1.0.0",
-  "description": "A starter kit that leverages the power of Kirby CMS and the rollup bundler. Bundle files are hashed using \"kirby-hashed-assets\" plugin developed by Johann Schopplich.",
+  "description": "Kirby CMS with Vite integration for asset handling and HMR.",
   "type": "module",
   "scripts": {
     "dev": "vite",

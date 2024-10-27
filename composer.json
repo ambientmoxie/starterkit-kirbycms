@@ -26,7 +26,8 @@
     "getkirby/cms": "4.1.1",
     "moritzebeling/kirby-maintenance": "^1.0",
     "hashandsalt/kirby4-seo": "^1.0",
-    "tobimori/kirby-blurhash": "^1.2"
+    "tobimori/kirby-blurhash": "^1.2",
+    "vlucas/phpdotenv": "^5.6"
   },
   "config": {
     "allow-plugins": {
@@ -37,7 +38,7 @@
   "scripts": {
     "start": [
       "Composer\\Config::disableProcessTimeout",
-      "@php -S localhost:8000 kirby/router.php"
+      "@php -S 0.0.0.0:8000 kirby/router.php"
     ]
   }
 }

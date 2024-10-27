@@ -1,9 +1,16 @@
 <?php
 
+require_once __DIR__ . '/../../vendor/autoload.php';
+
+// Load environment variables from .env file
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
+$dotenv->load();
+
 return [
     'debug' => false,
     'vite' => [
-        'dev' => false
+        'dev' => $_ENV['VITE_DEV'] === 'true',
+        'ip' => $_ENV['VITE_DEV_SERVER_IP']
     ],
     'moritzebeling.kirby-maintenance' => [
         'ignore' => [],

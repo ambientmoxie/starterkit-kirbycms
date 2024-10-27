@@ -14,8 +14,8 @@ require_once __DIR__ . '/../helpers/assetHandler.php';
 
     <?php if (option('vite.dev')): ?>
         <!-- Include Vite dev server for HMR -->
-        <script type="module" src="http://localhost:3000/@vite/client"></script>
-        <script type="module" src="http://localhost:3000/assets/js/main.js" defer></script>
+        <script type="module" src="http://<?= option('vite.ip') ?>:3000/@vite/client"></script>
+        <script type="module" src="http://<?= option('vite.ip') ?>:3000/assets/js/main.js" defer></script>
     <?php else: ?>
         <!-- Include the production build files -->
         <link rel="stylesheet" href="<?= handleHashedAsset('assets/js/main.js', "css") ?>">

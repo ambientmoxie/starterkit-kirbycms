@@ -22,7 +22,7 @@ Icon
 /.vscode
 /.idea
 
-# Rollup's generated folder
+# Vite generated folder
 # ----------------------
 
 /assets/bundle
@@ -40,6 +40,7 @@ node_modules
 *.psd
 *.indd
 *.ai
+.env
 
 # Kirby core directory
 # ----------------------

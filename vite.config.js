@@ -7,8 +7,7 @@ export default defineConfig({
   root: ".",
   build: {
     rollupOptions: {
-      input: "./assets/js/main.js", // specify the main.js file here
-      // Prevent files from being placed inside a subfolder named "assets"
+      input: "./assets/js/main.js",
       output: {
         entryFileNames: "[name]-[hash].js",
         assetFileNames: "[name]-[hash][extname]",
@@ -19,8 +18,8 @@ export default defineConfig({
     emptyOutDir: true,
   },
   server: {
-    host: true, // Allows access from other devices on the network
-    origin: `http://${process.env.VITE_DEV_SERVER_IP}:3000`, // Use the IP from the environment variable
+    host: true,
+    origin: `http://${process.env.VITE_DEV_SERVER_IP}:3000`,
     port: 3000,
     hot: true,
   },

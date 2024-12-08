@@ -4,8 +4,11 @@
   "description": "Kirby CMS with Vite integration for asset handling and HMR.",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "vite": "vite",
+    "dev": "concurrently \"npm:server\" \"npm:vite\" -c yellow,green",
+    "server": "php -S 0.0.0.0:8000 kirby/router.php",
+    "build": "vite build",
+    "preview": "concurrently \"npm:build\" \"npm:server\" -c yellow,green"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,7 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
+    "concurrently": "^9.1.0",
     "dotenv": "^16.4.5"
   }
 }

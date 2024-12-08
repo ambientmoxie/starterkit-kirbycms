@@ -34,11 +34,5 @@
       "getkirby/composer-installer": true
     },
     "optimize-autoloader": true
-  },
-  "scripts": {
-    "start": [
-      "Composer\\Config::disableProcessTimeout",
-      "@php -S 0.0.0.0:8000 kirby/router.php"
-    ]
   }
 }

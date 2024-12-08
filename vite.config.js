@@ -5,6 +5,7 @@ dotenv.config();
 
 export default defineConfig({
   root: ".",
+  base: process.env.VITE_DEV == "true" ? "" : "/assets/bundle",
   build: {
     rollupOptions: {
       input: "./assets/js/main.js",

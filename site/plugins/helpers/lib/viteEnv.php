@@ -1,7 +1,7 @@
 <?php
 
-require_once dirname(__DIR__, 4) . '/vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__, 4));
+require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable($_SERVER['DOCUMENT_ROOT']);
 $dotenv->load();
 
 function viteEnv($envVar)

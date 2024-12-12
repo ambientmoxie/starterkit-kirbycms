@@ -1,7 +1,0 @@
-name:
-  en: Maintenance
-  de: Wartungsmodus
-icon: moon
-sections:
-
-  maintenance: sections/maintenance

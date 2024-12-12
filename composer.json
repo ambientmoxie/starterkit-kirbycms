@@ -22,11 +22,8 @@
     "source": "https://github.com/getkirby/starterkit"
   },
   "require": {
-    "php": ">=8.0.0 <8.3.0",
+    "php": ">=8.0.0",
     "getkirby/cms": "4.1.1",
-    "moritzebeling/kirby-maintenance": "^1.0",
-    "hashandsalt/kirby4-seo": "^1.0",
-    "tobimori/kirby-blurhash": "^1.2",
     "vlucas/phpdotenv": "^5.6"
   },
   "config": {

@@ -1,0 +1,22 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: monospace;
+    padding: 10px;
+  }
+  
+  ul,
+  li {
+    list-style-type: none;
+    color: black;
+  }

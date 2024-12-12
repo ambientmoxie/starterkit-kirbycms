@@ -1,6 +1,0 @@
-label:
-  en: Info text for maintenance mode
-  de: Text für Wartungsmodus
-type: writer
-when:
-  maintenance: true

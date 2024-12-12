@@ -7,7 +7,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
 return [
-    'debug' => false,
+    'debug' => true,
     'vite' => [
         'dev' => $_ENV['VITE_DEV'] === 'true',
         'ip' => $_ENV['VITE_DEV_SERVER_IP']

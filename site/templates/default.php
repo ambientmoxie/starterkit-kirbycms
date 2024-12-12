@@ -16,6 +16,6 @@ snippet('header');
 </main>
 
 <?php
-snippet('foot');
 snippet('footer');
+snippet('foot');
 ?>

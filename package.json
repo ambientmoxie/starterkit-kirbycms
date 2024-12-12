@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "vite": "vite",
+    "server": "php -S 0.0.0.0:8000 kirby/router.php", 
+    "predev": "node setEnv.mjs",
     "dev": "concurrently \"npm:server\" \"npm:vite\" -c yellow,green",
-    "server": "php -S 0.0.0.0:8000 kirby/router.php",
+    "prebuild": "node setEnv.mjs",
     "build": "vite build",
     "preview": "concurrently \"npm:build\" \"npm:server\" -c yellow,green"
   },
